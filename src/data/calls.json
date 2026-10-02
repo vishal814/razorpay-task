@@ -1,0 +1,749 @@
+[
+  {
+    "customerId": "CUST001",
+    "callSid": "SIM_1790961811227_NWTHF2",
+    "startedAt": "2026-10-02T17:23:31.227Z",
+    "endedAt": "2026-10-02T17:23:31.469Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Rahul Sharma, this is an automated payment assistant calling regarding your upcoming payment of ₹1,499. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:23:31.459Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "How much do I owe?",
+        "timestamp": "2026-10-02T17:23:31.462Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Your total amount due is ₹1,499, due on 2026-10-05. Would you like to retry the autopay payment now?",
+        "timestamp": "2026-10-02T17:23:31.462Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "Why did it fail?",
+        "timestamp": "2026-10-02T17:23:31.465Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "The previous autopay attempt was unsuccessful with your bank account. Would you like us to initiate a retry for ₹1,499?",
+        "timestamp": "2026-10-02T17:23:31.466Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "Yes, retry it.",
+        "timestamp": "2026-10-02T17:23:31.468Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Thank you, Rahul Sharma. We have scheduled a retry for ₹1,499. You will receive a confirmation SMS shortly. Goodbye!",
+        "timestamp": "2026-10-02T17:23:31.469Z"
+      }
+    ],
+    "outcome": "retry_requested",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790961811227_qjud3"
+  },
+  {
+    "customerId": "CUST002",
+    "callSid": "SIM_1790961811475_W8LMVG",
+    "startedAt": "2026-10-02T17:23:31.475Z",
+    "endedAt": "2026-10-02T17:23:31.479Z",
+    "transcript": [
+      {
+        "speaker": "customer",
+        "text": "No, I'll pay manually through netbanking.",
+        "timestamp": "2026-10-02T17:23:31.478Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Understood. We have recorded that you will make a manual payment. Please complete the payment before your due date. Thank you, goodbye.",
+        "timestamp": "2026-10-02T17:23:31.478Z"
+      }
+    ],
+    "outcome": "manual_payment",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790961811475_hxfs3"
+  },
+  {
+    "customerId": "CUST003",
+    "callSid": "SIM_1790961811482_ONBV9Y",
+    "startedAt": "2026-10-02T17:23:31.482Z",
+    "endedAt": "2026-10-02T17:23:31.486Z",
+    "transcript": [
+      {
+        "speaker": "customer",
+        "text": "I am driving right now, please call me back later.",
+        "timestamp": "2026-10-02T17:23:31.484Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Understood. We have logged a callback request for you. Our team will reach out at a convenient time. Goodbye.",
+        "timestamp": "2026-10-02T17:23:31.485Z"
+      }
+    ],
+    "outcome": "callback_requested",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790961811482_x55pp"
+  },
+  {
+    "customerId": "CUST001",
+    "callSid": "SIM_1790962086917_S402W1",
+    "startedAt": "2026-10-02T17:28:06.917Z",
+    "endedAt": null,
+    "transcript": [],
+    "outcome": "unknown",
+    "callStatus": "initiated",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962086918_0szrx"
+  },
+  {
+    "customerId": "CUST004",
+    "callSid": "SIM_1790962212144_4ZDVDZ",
+    "startedAt": "2026-10-02T17:30:12.144Z",
+    "endedAt": null,
+    "transcript": [],
+    "outcome": "unknown",
+    "callStatus": "initiated",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962212144_hy2x2"
+  },
+  {
+    "customerId": "CUST004",
+    "callSid": "SIM_1790962229584_5NUJNU",
+    "startedAt": "2026-10-02T17:30:29.585Z",
+    "endedAt": null,
+    "transcript": [],
+    "outcome": "unknown",
+    "callStatus": "initiated",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962229585_cw47t"
+  },
+  {
+    "customerId": "CUST004",
+    "callSid": "SIM_1790962322703_PNSG3W",
+    "startedAt": "2026-10-02T17:32:02.735Z",
+    "endedAt": "2026-10-02T17:32:02.782Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Ananya Iyer, this is an automated payment assistant calling regarding your upcoming payment of ₹3,450. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:32:02.735Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "Why did it fail?",
+        "timestamp": "2026-10-02T17:32:02.767Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "The previous autopay attempt was unsuccessful with your bank account. Would you like us to initiate a retry for ₹3,450?",
+        "timestamp": "2026-10-02T17:32:02.769Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "Yes, retry it.",
+        "timestamp": "2026-10-02T17:32:02.778Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Thank you, Ananya Iyer. We have scheduled a retry for ₹3,450. You will receive a confirmation SMS shortly. Goodbye!",
+        "timestamp": "2026-10-02T17:32:02.779Z"
+      }
+    ],
+    "outcome": "retry_requested",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962322735_i36xh"
+  },
+  {
+    "customerId": "CUST001",
+    "callSid": "SIM_1790962341657_6FTU1T",
+    "startedAt": "2026-10-02T17:32:21.702Z",
+    "endedAt": "2026-10-02T17:32:21.761Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Rahul Sharma, this is an automated payment assistant calling regarding your upcoming payment of ₹1,499. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:32:21.702Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "How much do I owe?",
+        "timestamp": "2026-10-02T17:32:21.745Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Your total amount due is ₹1,499, due on 2026-10-05. Would you like to retry the autopay payment now?",
+        "timestamp": "2026-10-02T17:32:21.746Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "Why did it fail?",
+        "timestamp": "2026-10-02T17:32:21.751Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "The previous autopay attempt was unsuccessful with your bank account. Would you like us to initiate a retry for ₹1,499?",
+        "timestamp": "2026-10-02T17:32:21.752Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "Yes, retry it.",
+        "timestamp": "2026-10-02T17:32:21.758Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Thank you, Rahul Sharma. We have scheduled a retry for ₹1,499. You will receive a confirmation SMS shortly. Goodbye!",
+        "timestamp": "2026-10-02T17:32:21.759Z"
+      }
+    ],
+    "outcome": "retry_requested",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962341702_papcl"
+  },
+  {
+    "customerId": "CUST002",
+    "callSid": "SIM_1790962341770_EYYSEV",
+    "startedAt": "2026-10-02T17:32:21.770Z",
+    "endedAt": "2026-10-02T17:32:21.779Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Priya Mehta, this is an automated payment assistant calling regarding your upcoming payment of ₹899. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:32:21.771Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "No, I'll pay manually through netbanking.",
+        "timestamp": "2026-10-02T17:32:21.776Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Understood. We have recorded that you will make a manual payment. Please complete the payment before your due date. Thank you, goodbye.",
+        "timestamp": "2026-10-02T17:32:21.777Z"
+      }
+    ],
+    "outcome": "manual_payment",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962341771_ohh6z"
+  },
+  {
+    "customerId": "CUST003",
+    "callSid": "SIM_1790962341783_MO4BMI",
+    "startedAt": "2026-10-02T17:32:21.783Z",
+    "endedAt": "2026-10-02T17:32:21.791Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Amit Kumar, this is an automated payment assistant calling regarding your upcoming payment of ₹2,199. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:32:21.784Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "I am driving right now, please call me back later.",
+        "timestamp": "2026-10-02T17:32:21.788Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Understood. We have logged a callback request for you. Our team will reach out at a convenient time. Goodbye.",
+        "timestamp": "2026-10-02T17:32:21.789Z"
+      }
+    ],
+    "outcome": "callback_requested",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962341784_druso"
+  },
+  {
+    "customerId": "CUST001",
+    "callSid": "SIM_1790962511570_3MUO4K",
+    "startedAt": "2026-10-02T17:35:11.588Z",
+    "endedAt": "2026-10-02T17:35:11.623Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Rahul Sharma, this is an automated payment assistant calling regarding your upcoming payment of ₹1,499. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:35:11.588Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "How much do I owe?",
+        "timestamp": "2026-10-02T17:35:11.614Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Your total amount due is ₹1,499, due on 2026-10-05. Would you like to retry the autopay payment now?",
+        "timestamp": "2026-10-02T17:35:11.615Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "Why did it fail?",
+        "timestamp": "2026-10-02T17:35:11.618Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "The previous autopay attempt was unsuccessful with your bank account. Would you like us to initiate a retry for ₹1,499?",
+        "timestamp": "2026-10-02T17:35:11.618Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "Yes, retry it.",
+        "timestamp": "2026-10-02T17:35:11.621Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Thank you, Rahul Sharma. We have scheduled a retry for ₹1,499. You will receive a confirmation SMS shortly. Goodbye!",
+        "timestamp": "2026-10-02T17:35:11.622Z"
+      }
+    ],
+    "outcome": "retry_requested",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962511588_ikaso"
+  },
+  {
+    "customerId": "CUST002",
+    "callSid": "SIM_1790962511629_EQSSH5",
+    "startedAt": "2026-10-02T17:35:11.629Z",
+    "endedAt": "2026-10-02T17:35:11.634Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Priya Mehta, this is an automated payment assistant calling regarding your upcoming payment of ₹899. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:35:11.629Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "No, I'll pay manually through netbanking.",
+        "timestamp": "2026-10-02T17:35:11.632Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Understood. We have recorded that you will make a manual payment. Please complete the payment before your due date. Thank you, goodbye.",
+        "timestamp": "2026-10-02T17:35:11.633Z"
+      }
+    ],
+    "outcome": "manual_payment",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962511629_za74i"
+  },
+  {
+    "customerId": "CUST003",
+    "callSid": "SIM_1790962511637_Z0Q8Q6",
+    "startedAt": "2026-10-02T17:35:11.637Z",
+    "endedAt": "2026-10-02T17:35:11.641Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Amit Kumar, this is an automated payment assistant calling regarding your upcoming payment of ₹2,199. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:35:11.637Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "I am driving right now, please call me back later.",
+        "timestamp": "2026-10-02T17:35:11.639Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Understood. We have logged a callback request for you. Our team will reach out at a convenient time. Goodbye.",
+        "timestamp": "2026-10-02T17:35:11.640Z"
+      }
+    ],
+    "outcome": "callback_requested",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962511637_k06om"
+  },
+  {
+    "customerId": "CUST001",
+    "callSid": "SIM_1790962810488_5DABYI",
+    "startedAt": "2026-10-02T17:40:10.507Z",
+    "endedAt": "2026-10-02T17:40:10.541Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Rahul Sharma, this is an automated payment assistant calling regarding your upcoming payment of ₹1,499. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:40:10.507Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "How much do I owe?",
+        "timestamp": "2026-10-02T17:40:10.532Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Your total amount due is ₹1,499, due on 2026-10-05. Would you like to retry the autopay payment now?",
+        "timestamp": "2026-10-02T17:40:10.533Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "Why did it fail?",
+        "timestamp": "2026-10-02T17:40:10.536Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "The previous autopay attempt was unsuccessful with your bank account. Would you like us to initiate a retry for ₹1,499?",
+        "timestamp": "2026-10-02T17:40:10.536Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "Yes, retry it.",
+        "timestamp": "2026-10-02T17:40:10.539Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Thanks, Rahul Sharma. I've recorded your request to retry the autopay for ₹1,499. No payment has been processed by this demo. Goodbye!",
+        "timestamp": "2026-10-02T17:40:10.540Z"
+      }
+    ],
+    "outcome": "retry_requested",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962810507_yqelw"
+  },
+  {
+    "customerId": "CUST002",
+    "callSid": "SIM_1790962810546_JOYCYY",
+    "startedAt": "2026-10-02T17:40:10.546Z",
+    "endedAt": "2026-10-02T17:40:10.550Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Priya Mehta, this is an automated payment assistant calling regarding your upcoming payment of ₹899. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:40:10.546Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "No, I'll pay manually through netbanking.",
+        "timestamp": "2026-10-02T17:40:10.549Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Understood. We have recorded that you will make a manual payment. Please complete the payment before your due date. Thank you, goodbye.",
+        "timestamp": "2026-10-02T17:40:10.549Z"
+      }
+    ],
+    "outcome": "manual_payment",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962810546_pz7rd"
+  },
+  {
+    "customerId": "CUST003",
+    "callSid": "SIM_1790962810553_PNII11",
+    "startedAt": "2026-10-02T17:40:10.553Z",
+    "endedAt": "2026-10-02T17:40:10.557Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Amit Kumar, this is an automated payment assistant calling regarding your upcoming payment of ₹2,199. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:40:10.553Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "I am driving right now, please call me back later.",
+        "timestamp": "2026-10-02T17:40:10.556Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Understood. We have logged a callback request for you. Our team will reach out at a convenient time. Goodbye.",
+        "timestamp": "2026-10-02T17:40:10.556Z"
+      }
+    ],
+    "outcome": "callback_requested",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962810553_9zjje"
+  },
+  {
+    "customerId": "CUST005",
+    "callSid": "SIM_1790962877618_ZSLE0L",
+    "startedAt": "2026-10-02T17:41:17.638Z",
+    "endedAt": "2026-10-02T17:41:17.661Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Vikram Patel, this is an automated payment assistant calling regarding your upcoming payment of ₹599. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:41:17.639Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "Yes, retry it.",
+        "timestamp": "2026-10-02T17:41:17.660Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Thanks, Vikram Patel. I've recorded your request to retry the autopay for ₹599. No payment has been processed by this demo. Goodbye!",
+        "timestamp": "2026-10-02T17:41:17.660Z"
+      }
+    ],
+    "outcome": "retry_requested",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962877639_kkuip"
+  },
+  {
+    "customerId": "CUST006",
+    "callSid": "SIM_1790962877664_IXGLW7",
+    "startedAt": "2026-10-02T17:41:17.665Z",
+    "endedAt": "2026-10-02T17:41:17.670Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Sneha Reddy, this is an automated payment assistant calling regarding your upcoming payment of ₹4,200. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:41:17.665Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "No, I will pay manually.",
+        "timestamp": "2026-10-02T17:41:17.669Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Understood. We have recorded that you will make a manual payment. Please complete the payment before your due date. Thank you, goodbye.",
+        "timestamp": "2026-10-02T17:41:17.669Z"
+      }
+    ],
+    "outcome": "manual_payment",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962877665_tqp10"
+  },
+  {
+    "customerId": "CUST007",
+    "callSid": "SIM_1790962877673_VC1VEX",
+    "startedAt": "2026-10-02T17:41:17.674Z",
+    "endedAt": "2026-10-02T17:41:17.679Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Rohan Verma, this is an automated payment assistant calling regarding your upcoming payment of ₹1,250. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:41:17.674Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "Please call me back later.",
+        "timestamp": "2026-10-02T17:41:17.677Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Understood. We have logged a callback request for you. Our team will reach out at a convenient time. Goodbye.",
+        "timestamp": "2026-10-02T17:41:17.678Z"
+      }
+    ],
+    "outcome": "callback_requested",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962877674_jxhcg"
+  },
+  {
+    "customerId": "CUST001",
+    "callSid": "SIM_1790962886113_6QCOU8",
+    "startedAt": "2026-10-02T17:41:26.135Z",
+    "endedAt": "2026-10-02T17:41:26.167Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Rahul Sharma, this is an automated payment assistant calling regarding your upcoming payment of ₹1,499. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:41:26.135Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "How much do I owe?",
+        "timestamp": "2026-10-02T17:41:26.158Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Your total amount due is ₹1,499, due on 2026-10-05. Would you like to retry the autopay payment now?",
+        "timestamp": "2026-10-02T17:41:26.159Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "Why did it fail?",
+        "timestamp": "2026-10-02T17:41:26.162Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "The previous autopay attempt was unsuccessful with your bank account. Would you like us to initiate a retry for ₹1,499?",
+        "timestamp": "2026-10-02T17:41:26.162Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "Yes, retry it.",
+        "timestamp": "2026-10-02T17:41:26.165Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Thanks, Rahul Sharma. I've recorded your request to retry the autopay for ₹1,499. No payment has been processed by this demo. Goodbye!",
+        "timestamp": "2026-10-02T17:41:26.166Z"
+      }
+    ],
+    "outcome": "retry_requested",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962886135_b7531"
+  },
+  {
+    "customerId": "CUST002",
+    "callSid": "SIM_1790962886173_4S0DOM",
+    "startedAt": "2026-10-02T17:41:26.174Z",
+    "endedAt": "2026-10-02T17:41:26.178Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Priya Mehta, this is an automated payment assistant calling regarding your upcoming payment of ₹899. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:41:26.174Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "No, I'll pay manually through netbanking.",
+        "timestamp": "2026-10-02T17:41:26.176Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Understood. We have recorded that you will make a manual payment. Please complete the payment before your due date. Thank you, goodbye.",
+        "timestamp": "2026-10-02T17:41:26.177Z"
+      }
+    ],
+    "outcome": "manual_payment",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962886174_y446w"
+  },
+  {
+    "customerId": "CUST003",
+    "callSid": "SIM_1790962886181_H2325P",
+    "startedAt": "2026-10-02T17:41:26.181Z",
+    "endedAt": "2026-10-02T17:41:26.185Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Amit Kumar, this is an automated payment assistant calling regarding your upcoming payment of ₹2,199. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:41:26.181Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "I am driving right now, please call me back later.",
+        "timestamp": "2026-10-02T17:41:26.184Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Understood. We have logged a callback request for you. Our team will reach out at a convenient time. Goodbye.",
+        "timestamp": "2026-10-02T17:41:26.184Z"
+      }
+    ],
+    "outcome": "callback_requested",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790962886181_gsoua"
+  },
+  {
+    "customerId": "CUST001",
+    "callSid": "SIM_1790963312713_QS45R6",
+    "startedAt": "2026-10-02T17:48:32.731Z",
+    "endedAt": "2026-10-02T17:48:32.764Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Rahul Sharma, this is an automated payment assistant calling regarding your upcoming payment of ₹1,499. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:48:32.731Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "How much do I owe?",
+        "timestamp": "2026-10-02T17:48:32.754Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Your total amount due is ₹1,499, due on 2026-10-05. Would you like to retry the autopay payment now?",
+        "timestamp": "2026-10-02T17:48:32.756Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "Why did it fail?",
+        "timestamp": "2026-10-02T17:48:32.759Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "The previous autopay attempt was unsuccessful with your bank account. Would you like us to initiate a retry for ₹1,499?",
+        "timestamp": "2026-10-02T17:48:32.760Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "Yes, retry it.",
+        "timestamp": "2026-10-02T17:48:32.763Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Thanks, Rahul Sharma. I've recorded your request to retry the autopay for ₹1,499. No payment has been processed by this demo. Goodbye!",
+        "timestamp": "2026-10-02T17:48:32.763Z"
+      }
+    ],
+    "outcome": "retry_requested",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790963312731_551v4"
+  },
+  {
+    "customerId": "CUST002",
+    "callSid": "SIM_1790963312770_CGYV0S",
+    "startedAt": "2026-10-02T17:48:32.770Z",
+    "endedAt": "2026-10-02T17:48:32.775Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Priya Mehta, this is an automated payment assistant calling regarding your upcoming payment of ₹899. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:48:32.770Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "No, I'll pay manually through netbanking.",
+        "timestamp": "2026-10-02T17:48:32.773Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Understood. We have recorded that you will make a manual payment. Please complete the payment before your due date. Thank you, goodbye.",
+        "timestamp": "2026-10-02T17:48:32.774Z"
+      }
+    ],
+    "outcome": "manual_payment",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790963312770_4w849"
+  },
+  {
+    "customerId": "CUST003",
+    "callSid": "SIM_1790963312778_ENK45T",
+    "startedAt": "2026-10-02T17:48:32.778Z",
+    "endedAt": "2026-10-02T17:48:32.782Z",
+    "transcript": [
+      {
+        "speaker": "agent",
+        "text": "Hi Amit Kumar, this is an automated payment assistant calling regarding your upcoming payment of ₹2,199. Your autopay attempt was unsuccessful. Would you like to retry the payment?",
+        "timestamp": "2026-10-02T17:48:32.778Z"
+      },
+      {
+        "speaker": "customer",
+        "text": "I am driving right now, please call me back later.",
+        "timestamp": "2026-10-02T17:48:32.781Z"
+      },
+      {
+        "speaker": "agent",
+        "text": "Understood. We have logged a callback request for you. Our team will reach out at a convenient time. Goodbye.",
+        "timestamp": "2026-10-02T17:48:32.781Z"
+      }
+    ],
+    "outcome": "callback_requested",
+    "callStatus": "completed",
+    "notes": "Simulated call mode",
+    "id": "CALL_1790963312778_gmktt"
+  }
+]

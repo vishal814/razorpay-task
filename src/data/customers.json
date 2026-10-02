@@ -1,0 +1,112 @@
+[
+  {
+    "id": "CUST001",
+    "name": "Rahul Sharma",
+    "phone": "+919876543210",
+    "amountDue": 1499,
+    "dueDate": "2026-10-05",
+    "autopayStatus": "failed",
+    "latestOutcome": "retry_requested",
+    "latestCallSid": "SIM_1790963312713_QS45R6",
+    "lastContactedAt": "2026-10-02T17:48:32.764Z"
+  },
+  {
+    "id": "CUST002",
+    "name": "Priya Mehta",
+    "phone": "+919876543211",
+    "amountDue": 899,
+    "dueDate": "2026-10-06",
+    "autopayStatus": "failed",
+    "latestOutcome": "manual_payment",
+    "latestCallSid": "SIM_1790963312770_CGYV0S",
+    "lastContactedAt": "2026-10-02T17:48:32.775Z"
+  },
+  {
+    "id": "CUST003",
+    "name": "Amit Kumar",
+    "phone": "+919876543212",
+    "amountDue": 2199,
+    "dueDate": "2026-10-04",
+    "autopayStatus": "failed",
+    "latestOutcome": "callback_requested",
+    "latestCallSid": "SIM_1790963312778_ENK45T",
+    "lastContactedAt": "2026-10-02T17:48:32.782Z"
+  },
+  {
+    "id": "CUST004",
+    "name": "Ananya Iyer",
+    "phone": "+919876543213",
+    "amountDue": 3450,
+    "dueDate": "2026-10-07",
+    "autopayStatus": "failed",
+    "latestOutcome": "retry_requested",
+    "latestCallSid": "SIM_1790962322703_PNSG3W",
+    "lastContactedAt": "2026-10-02T17:32:02.781Z"
+  },
+  {
+    "id": "CUST005",
+    "name": "Vikram Patel",
+    "phone": "+919876543214",
+    "amountDue": 599,
+    "dueDate": "2026-10-03",
+    "autopayStatus": "failed",
+    "latestOutcome": "retry_requested",
+    "latestCallSid": "SIM_1790962877618_ZSLE0L",
+    "lastContactedAt": "2026-10-02T17:41:17.661Z"
+  },
+  {
+    "id": "CUST006",
+    "name": "Sneha Reddy",
+    "phone": "+919876543215",
+    "amountDue": 4200,
+    "dueDate": "2026-10-08",
+    "autopayStatus": "failed",
+    "latestOutcome": "manual_payment",
+    "latestCallSid": "SIM_1790962877664_IXGLW7",
+    "lastContactedAt": "2026-10-02T17:41:17.670Z"
+  },
+  {
+    "id": "CUST007",
+    "name": "Rohan Verma",
+    "phone": "+919876543216",
+    "amountDue": 1250,
+    "dueDate": "2026-10-05",
+    "autopayStatus": "failed",
+    "latestOutcome": "callback_requested",
+    "latestCallSid": "SIM_1790962877673_VC1VEX",
+    "lastContactedAt": "2026-10-02T17:41:17.678Z"
+  },
+  {
+    "id": "CUST008",
+    "name": "Deepa Nair",
+    "phone": "+919876543217",
+    "amountDue": 1899,
+    "dueDate": "2026-10-09",
+    "autopayStatus": "failed",
+    "latestOutcome": null,
+    "latestCallSid": null,
+    "lastContactedAt": null
+  },
+  {
+    "id": "CUST009",
+    "name": "Kunal Joshi",
+    "phone": "+919876543218",
+    "amountDue": 2750,
+    "dueDate": "2026-10-04",
+    "autopayStatus": "failed",
+    "latestOutcome": null,
+    "latestCallSid": null,
+    "lastContactedAt": null
+  },
+  {
+    "id": "CUST010",
+    "name": "Pooja Singh",
+    "phone": "+919876543219",
+    "amountDue": 999,
+    "dueDate": "2026-10-06",
+    "autopayStatus": "failed",
+    "latestOutcome": null,
+    "latestCallSid": null,
+    "lastContactedAt": null
+  }
+]

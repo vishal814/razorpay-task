@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autopay Recovery Voice Agent | Operations Dashboard</title>
+  <meta name="description" content="AI Voice agent dashboard for automated recovery of failed autopay transactions with Twilio and Gemini LLM.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Navigation Bar -->
+    <header class="app-header">
+      <div class="header-left">
+        <div class="brand-logo">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="brand-title">Autopay Recovery Voice Agent</h1>
+          <p class="brand-subtitle">Automated Conversational Voice Outreach &amp; Intent Recovery</p>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="status-pill" id="telephonyStatusPill">
+          <span class="status-dot"></span>
+          <span id="telephonyStatusText">Checking Service...</span>
+        </div>
+        <button class="btn btn-secondary" id="refreshBtn" title="Refresh dashboard data">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+          </svg>
+          Refresh
+        </button>
+      </div>
+    </header>
+
+    <!-- Metrics Overview Cards -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-title">Fictional Accounts</div>
+        <div class="stat-value" id="statTotalCustomers">10</div>
+        <div class="stat-desc">Fictional customer demo records</div>
+      </div>
+      <div class="stat-card stat-accent-red">
+        <div class="stat-title">Autopay Status</div>
+        <div class="stat-value" id="statFailedAutopay">10 Failed</div>
+        <div class="stat-desc">Upcoming &amp; overdue debits</div>
+      </div>
+      <div class="stat-card stat-accent-green">
+        <div class="stat-title">Retries Scheduled</div>
+        <div class="stat-value" id="statRetries">0</div>
+        <div class="stat-desc">Intent: retry_requested</div>
+      </div>
+      <div class="stat-card stat-accent-blue">
+        <div class="stat-title">Manual / Callbacks</div>
+        <div class="stat-value" id="statAlternative">0</div>
+        <div class="stat-desc">Customer chosen alternate actions</div>
+      </div>
+    </section>
+
+    <!-- Main Workspace Layout -->
+    <main class="main-layout">
+      <!-- Left Column: Customer Records Table -->
+      <section class="card table-container">
+        <div class="card-header">
+          <div>
+            <h2 class="card-title">Customer Recovery Queue</h2>
+            <p class="card-subtitle">Select any customer to view details, inspect transcripts, or initiate a call</p>
+          </div>
+          <div class="search-box">
+            <input type="text" id="customerSearchInput" placeholder="Filter by name or ID..." aria-label="Search customers">
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table" id="customersTable">
+            <thead>
+              <tr>
+                <th>Customer</th>
+                <th>Phone</th>
+                <th>Amount Due</th>
+                <th>Due Date</th>
+                <th>Autopay</th>
+                <th>Latest Outcome</th>
+                <th class="text-right">Action</th>
+              </tr>
+            </thead>
+            <tbody id="customersTableBody">
+              <tr>
+                <td colspan="7" class="text-center text-muted">Loading customer records...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Right Column: Detail & Transcript Viewer -->
+      <aside class="card detail-container" id="detailPanel">
+        <div class="card-header">
+          <div>
+            <h2 class="card-title" id="selectedCustomerTitle">Customer Details</h2>
+            <p class="card-subtitle" id="selectedCustomerSubtitle">Select a customer from the queue</p>
+          </div>
+          <span class="badge" id="selectedCustomerBadge">Idle</span>
+        </div>
+
+        <div id="noCustomerSelected" class="empty-state">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+          <p>Click on any customer in the table to inspect details, initiate an AI voice call, and inspect conversational transcripts.</p>
+        </div>
+
+        <div id="customerSelectedContent" class="customer-content hidden">
+          <!-- Customer Quick Profile -->
+          <div class="customer-info-box">
+            <div class="info-row">
+              <span class="info-label">Customer ID</span>
+              <span class="info-val" id="custDetailId">-</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Full Name</span>
+              <span class="info-val font-semibold" id="custDetailName">-</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Phone Number</span>
+              <span class="info-val font-mono" id="custDetailPhone">-</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Amount Due</span>
+              <span class="info-val font-semibold text-danger" id="custDetailAmount">-</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Due Date</span>
+              <span class="info-val" id="custDetailDueDate">-</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Current Outcome</span>
+              <span class="info-val" id="custDetailOutcome">-</span>
+            </div>
+          </div>
+
+          <!-- Outbound Call Controls -->
+          <div class="call-control-section">
+            <button class="btn btn-primary btn-block btn-lg" id="btnInitiateCall">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span id="btnInitiateCallText">Call Customer</span>
+            </button>
+            <div class="call-notice" id="callNotice">
+              Calls use Twilio when configured, or interactive simulation mode.
+            </div>
+          </div>
+
+          <!-- Interactive Conversational Turn Tester -->
+          <div class="simulator-box" id="simulatorSection">
+            <div class="simulator-header">
+              <span class="font-semibold">Interactive Voice Response Simulator</span>
+              <span class="simulator-tag">Evaluation Helper</span>
+            </div>
+            <p class="simulator-desc">Test customer spoken responses directly to evaluate Gemini intent understanding &amp; outcome generation:</p>
+            <div class="quick-chips">
+              <button class="chip" data-phrase="How much do I owe?">"How much do I owe?"</button>
+              <button class="chip" data-phrase="Why did it fail?">"Why did it fail?"</button>
+              <button class="chip" data-phrase="Yes, retry it.">"Yes, retry it."</button>
+              <button class="chip" data-phrase="No, I'll pay manually.">"No, I'll pay manually."</button>
+              <button class="chip" data-phrase="Please call me back later.">"Call me back later"</button>
+              <button class="chip" data-phrase="No.">"No."</button>
+            </div>
+            <div class="sim-input-row">
+              <input type="text" id="simSpeechInput" placeholder="Or type any customer response..." aria-label="Customer speech response">
+              <button class="btn btn-secondary" id="btnSendSimInput">Send Reply</button>
+            </div>
+          </div>
+
+          <!-- Transcript Section -->
+          <div class="transcript-section">
+            <div class="transcript-header">
+              <h3 class="transcript-title">Call Transcript</h3>
+              <span class="transcript-count" id="transcriptCount">0 messages</span>
+            </div>
+            <div class="transcript-feed" id="transcriptFeed">
+              <div class="text-center text-muted" style="padding: 24px;">No call transcript recorded yet. Click "Call Customer" to start.</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Footer with Architectural & Assignment Notes -->
+    <footer class="app-footer">
+      <div>
+        <span><strong>Safety Guarantee:</strong> Uses strictly fictional customer data. Only pre-configured authorized demo numbers are dialed.</span>
+      </div>
+      <div>
+        <span>Tech Stack: Node.js · TypeScript · Express · Twilio · Gemini AI</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
